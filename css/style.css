@@ -1,0 +1,122 @@
+ /* * {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}  */
+
+p {
+    color: white;
+    text-align: center;
+}
+
+
+main {
+    background-image: url(../images/fondomadera.jpg);
+    background-size: cover;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+.bg-blue {
+    background-color: #27354d;
+
+}
+
+#carouselExampleControls .carousel-item img {
+    object-fit: contain;
+    height: 600px;
+    width: 100%;
+}
+
+.font {
+    font-size: 20px;
+}
+
+.font-s {
+    font-size: 16px;
+}
+
+.radius {
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+@media (max-width:600px){
+    body {
+        font-size: 12px;
+    }
+
+    img {
+        height: 70%;
+        width: 70%;
+
+
+    }
+    iframe {
+        height: 70%;
+        width: 70%;
+    }
+
+  }
+
+@media (max-width:530px){
+    body {
+        font-size: 10px;
+    }
+    
+    img {
+        height: 70%;
+        width: 70%;
+
+
+    }
+    iframe {
+        height: 70%;
+        width: 70%;
+    }
+}
+
+@media (max-width:482px){
+    body {
+        font-size: 8px;
+    }
+    
+    img {
+        height: 70%;
+        width: 70%;
+
+
+    }
+    iframe {
+        height: 70%;
+        width: 70%;
+    }
+}
+
+@media (max-width:443px){
+    body {
+        font-size: 6px;
+    }
+    p {
+        font-size: 6px;
+    }
+}
+@media (max-width:376px){
+    body {
+        font-size: 5px;
+    }
+    p {
+        font-size: 8px;
+    }
+}
