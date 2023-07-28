@@ -1231,36 +1231,66 @@ footer {
         .layoutmain {
             display: grid !important;
             grid-template-columns: auto auto auto;
+            
 
             .section {
-                background-color: #FF450C;
+                background: rgb(255,255,255) !important;
+                background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(255,69,12,1) 50%, rgba(216,216,217,1) 100%) !important;
                 background-image: none;
                 grid-column: 1/4;
-
+                height: 50vh;
+                
+                
 
 
                 div {
                     text-align: center;
                     padding: 0;
                     margin: 0;
+                    
+                    h1 {
+                        color: black;
+                        font-size: 29px;
+                        color:#04355c;
+                        font-stretch:narrower;
+                    }
+                    p {
+                        color: black;
+                        font-size: 14px;
+                        color:#043359;
+                    }
                 }
             }
             .art1 {
                 display: grid !important;
                 grid-template-columns: auto auto auto;
                 margin-bottom: 5%;
+                margin-top: 0%;
 
                 .div1 {
                     width: 100%;
                     grid-column: 1/4;
+
+                    h1 {
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    }
                 }
                 .div2 {
                     width: 100%;
                     grid-column: 1/4;
+
+                    h1 {
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        
+                    }
                 }
                 .div3 {
                     width: 100%;
                     grid-column: 1/4;
+
+                    h1 {
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    }
                 }
             }
 
@@ -1543,6 +1573,15 @@ footer {
             grid-template-columns: auto auto auto;
             background-image: cover;
             width: 100%;
+            height: 50vh;
+
+           div {
+
+            h1 {
+                font-size: 30px;
+                padding-bottom: 10%;
+            }
+           }
 
         }
     }
@@ -1606,6 +1645,7 @@ footer {
             grid-template-columns: auto auto auto;
             background-image: cover;
             width: 100%;
+            height: 50vh;
 
 
             div {
@@ -1697,6 +1737,7 @@ footer {
         .bienvenida5{
             display: grid !important;
             grid-template-columns: auto auto auto auto;
+            height: 95vh;
 
 
             .containerimg {
@@ -1706,14 +1747,15 @@ footer {
             .containertitulo {
                 grid-column: 1/6;
                 width: 100%;
-                padding:3%;
+                padding:4%;
                 margin: 0;
 
                 h1 {
-                    font-size: 22px;
+                    font-size: 28px;
                 }
                 h5 {
                     font-size: 20px;
+                    padding: 3%;
                 }
                 p {
                     font-size: 14px;
@@ -1727,15 +1769,21 @@ footer {
             .mision {
                 grid-column: 1/3;
                 width: 100%;
-                padding-top: 4%;
-
-
+                padding-top: 5%;
+                padding-bottom: 5%;
+                height: auto;
+    
+            
                 h3 {
-                    font-size: 20px;
-                    margin-top: 0;
+                    font-size: 23px;
+                    margin: 0;
+                   
+                
                 }
                 p {
                     font-size: 16px;
+                    padding: 3%;
+                    margin: 0;
                 }
             }
             .equipo {
@@ -1747,10 +1795,10 @@ footer {
                 }
                 p {
                     font-size: 16px;
+                    padding: 3%;
                 }
             }
             .imgequipo {
-                background-color: red;
                 grid-column: 1/3;
                 width: 100%;
 
@@ -1758,11 +1806,14 @@ footer {
             .filosofia {
                 grid-column: 1/3;
                 width: 100%;
+                padding-top: 5%;
+                
                 h3 {
                     font-size: 20px;
                 }
                 p {
                     font-size: 16px;
+                    padding: 3%;
                 }
                 img {
                     width: 100%;
@@ -1779,7 +1830,12 @@ footer {
         }
     }
 }
-@media (max-width: 800px) {
+
+                                    // TABLET
+
+
+@media (min-width: 500px) and (max-width:800px) {
+
     .bienvenida4{
         display: grid !important;
         grid-template-columns: auto auto auto;
