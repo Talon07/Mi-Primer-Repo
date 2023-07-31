@@ -1,0 +1,25 @@
+$vision: mobile;
+
+body {
+    @if $vision == tablet {
+        @media screen and (max-width:800px) {
+            h1 {
+                color: yellow;
+            }
+        }
+    }
+
+    @else if $vision == mobile {
+        @media screen and (max-width:500px) {
+            h1 {
+                color: blueviolet;
+            }
+        }
+    }
+
+    @else {
+        h1 {
+            color: orangered;
+        }
+    }
+}
