@@ -98,6 +98,7 @@
                     text-align: center;
                     padding: 0;
                     margin: 0;
+                    width: 100%;
                     
                     h1 {
                         color: black;
@@ -766,6 +767,7 @@
                 text-align: center;
                 padding: 0;
                 margin: 0;
+                width: 100%;
                 
                 p {
                     color: black;
@@ -798,6 +800,7 @@
     }
 
                 // AJUSTES TABLET A PAGINA 2 "CAROUSEL Y BOXES"
+
     .layoutpinturas {
         background-color: #FF450C;
         // width: 100%;
@@ -975,5 +978,12 @@
             }
         }
 
+    }
+                            // AJUSTE A IMAGEN "ANTES Y DESPUES" DE PAGINA 5 
+    .filosofia {
+        img {
+            width: 90%;
+            height: 90%;
+        }
     }
 }
