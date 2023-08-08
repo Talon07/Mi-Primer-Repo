@@ -69,13 +69,17 @@ main {
             }
             a {
                 @include box_a($color-fondobox:white);
+                
+                &:active {
+                    background-color: gray;
+                }
                
             }
         }
 
         .div2 {
             height: 800px;
-            background-color: #00447D;
+            background-color: rgb(57, 145, 175);
             color: white;
             @include box_inicio($color-fondobox:white);
             &:hover {
@@ -95,6 +99,9 @@ main {
     
             a {
                 @include box_a($color-fondobox:white);
+                &:active {
+                    background-color: gray;
+                }
             }
         }
 
@@ -119,6 +126,9 @@ main {
 
             a {
                 @include box_a($color-fondobox:white);
+                &:active {
+                    background-color: gray;
+                }
             }
         }
 

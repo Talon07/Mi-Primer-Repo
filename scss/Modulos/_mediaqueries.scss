@@ -1,8 +1,347 @@
-             // MEDIA QUERIES DE TODAS LAS PAGINAS MAX 500PX Y 800PX
+// MEDIA QUERIES DE TODAS LAS PAGINAS MAX 500PX Y 800PX
+            
+                    // TABLET
+
+@media (min-width: 500px) and (max-width:800px) {
+
+    .bienvenida4{
+        display: grid !important;
+        grid-template-columns: auto auto auto;
+        background-image: url(../images/pagina4.jpg);
+        background-size: 100% 100%;
+        width: 100% !important;
+        height: 80vh;
+
+        div {
+            grid-column: 1/4;
+            margin: 0;
+            padding-bottom:2%;
+            grid-column: 1/4;
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            flex-direction: column;
+
+            h1 {
+              
+              width: 50%;
+              font-size: 25px !important;
+              padding: 0;
+              margin-bottom: 4%;
+              text-align: center;
+            }
+        }
+    }
+
+                    // AJUSTES TABLET PAGINA 3 "TENDENCIAS"
+    .pag3sect {
+        background-color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .bienvenida2 {
+            background-image: url(../images/tendencias.webp);
+            background-size: 100% 100%;
+            width: 100%;
+            height: 80vh;
+    
+            div {
+                height: 70%;
+                h1 {
+                    text-align: center;
+                    font-size: 32px;
+                    font-family: 'Cinzel', serif;
+                    letter-spacing: 2px;
+                    
+                }
+            }
+        }
+    }    
+
+                // AJUSTE TABLET A PAGINA 1 "INICIO"
+    .layoutmain {
+        display: grid !important;
+        grid-template-columns: auto auto auto;
+
+        .section {
+            
+            background: rgb(255,255,255) !important;
+            background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(255,69,12,1) 50%, rgba(216,216,217,1) 100%) !important;
+            background-image: none;
+            grid-column: 1/4;
+            
+
+
+
+            div {
+                text-align: center;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                
+                p {
+                    color: black;
+                }
+                h1 {
+                    color: black;
+                }
+            }
+        }
+
+    }
+
+    .art1 {
+        display: grid !important;
+        grid-template-columns: auto auto auto;
+        margin-bottom: 5%;
+
+        .div1 {
+            width: 100%;
+            grid-column: 1/4;
+        }
+        .div2 {
+            width: 100%;
+            grid-column: 1/4;
+        }
+        .div3 {
+            width: 100%;
+            grid-column: 1/4;
+        }
+    }
+
+         // AJUSTES TABLET A PAGINA 2 "CAROUSEL Y BOXES"
+
+    .layoutpinturas {
+        background-color: #FF450C;
+
+        .layoutcarousel {
+            background-color: #FF450C;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+            .carouselpadre {
+                background-color: #FF450C;
+                width: 100%;
+                margin: 0 !important;
+                display: grid !important;
+                grid-template-columns: auto auto auto;
+
+                .carousel {
+                    height: 70vh;
+                    width: 100%;
+                    padding: 0;
+                    grid-column: 1/4;
+
+                    .carouselhijo {
+                        background-color: red;
+                        align-items: center;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    .selecpintura {
+
+        display: grid !important;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+
+         .titulo {
+             grid-column: 1/3;
+
+             h1 {
+                font-size: 25px;
+                text-align: center;
+            }
+             p {
+                 font-size: 16px;
+             }
+        }
+
+        .one {
+           grid-column: 1/3;
+           width: 80%;
+
+        }
+        .two {
+            grid-column: 1/3;
+            width: 80%;
+        }
+        .three {
+            grid-column: 1/3;
+            width: 80%;
+        }
+        .four {
+            grid-column: 1/3;
+            width: 80%;
+        }
+        .five {
+            grid-column: 1/3;
+            width: 80%;
+        }
+        .six {
+            grid-column: 1/3;
+            width: 80%;
+        }
+        .piedeart1 {
+            grid-column: 1/3;
+            width: 100%;
+            h5 {
+                font-size: 18px;
+            }
+        }
+
+    }
+    .tiposdepintura {
+
+        display: grid !important;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+
+         .titulo2 {
+             grid-column: 1/3;
+
+             h1 {
+                font-size: 25px;
+                text-align: center;
+            }
+             p {
+                 font-size: 16px;
+                 text-align: start;
+             }
+        }
+
+        .one2 {
+           grid-column: 1/3;
+           width: 80%;
+
+        }
+        .two2 {
+            grid-column: 1/3;
+            width: 80%;
+        }
+        .three2 {
+            grid-column: 1/3;
+            width: 80%;
+        }
+        .piedeart2 {
+            grid-column: 1/3;
+            width: 100%;
+            h5 {
+                font-size: 18px;
+
+            }
+        }
+
+    }
+    .evaluacionsup {
+        display: grid !important;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+
+         .titulo3 {
+             grid-column: 1/3;
+
+             h1 {
+                font-size: 25px;
+                text-align: center;
+            }
+             p {
+                 font-size: 16px;
+                 text-align: start;
+             }
+        }
+
+        .one3 {
+           grid-column: 1/3;
+           width: 80%;
+
+        }
+        .two3 {
+            grid-column: 1/3;
+            width: 80%;
+        }
+        .three3 {
+            grid-column: 1/3;
+            width: 80%;
+        }
+        .piedeart3 {
+            grid-column: 1/3;
+            width: 100%;
+            h5 {
+                font-size: 18px;
+
+            }
+        }
+
+    }
+         // AJUSTE A IMAGEN "ANTES Y DESPUES" DE PAGINA 5 
+    .filosofia {
+        img {
+            width: 90%;
+            height: 90%;
+        }
+    }
+
+
+            //  AJUSTE A BIENVENIDA DE PAGINA 5 "MAS"
+    
+    .containertitulo {
+        
+        h1{
+            font-size: 28px !important;
+        }
+        h5 {
+            font-size: 22px !important;
+            margin: 3%;
+        }
+        p {
+            font-size: 16px !important;
+        }
+    }
+    article {
+        .mision {
+            h3 {
+                font-size: 35px !important;
+            }
+            p {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+        .equipo {
+            h3 {
+                font-size: 28px !important;
+                padding: 3%;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+                // AJUSTE A MAIN DE PAGINA 5 "MAS"
+
+    .primerarticulo4 {
+        width: 80% !important;
+        height: 50%;
+    }
+    .segundoarticulo4 {
+        width: 80% !important;
+        height: 50%;
+    }
+
+}
 
 @media (max-width: 500px) {
 
-                                     // COMIENZO DE PAGINA 1
+                    // COMIENZO DE PAGINA 1
 
     header {
         background-color: white;
@@ -150,82 +489,112 @@
 
     }
     footer {
-        background-color: white;
-        height: 30vh;
-        margin: 0;
-        padding: 0;
-
         .layoutfooter {
-
-            height: 100%;
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
 
-
-
+    
             .containerlogo {
-                background-color:white;
+                grid-row: 2;
                 width: 100%;
-                grid-column: 1/4;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-
-                h1 {
-                    border-bottom: 3px solid rgb(141, 141, 141);
-                    padding: 2%;
+               
+    
+                .sublogo {
+               
+                    h1 {
+                        font-size: 30px;
+                    }
+                    
+                    img {
+                        width: 30px;
+                         height: 30px;
+                    }
                 }
-
-            }
-            .containerul {
-                background-color: white;
-                width: 100%;
-                grid-column: 1/4;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding-top: 5%;
-
-
-
-                ul {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    height: 100%;
-
-
-
+                .containerul {
+                    width: 100%;
+    
+                    ul {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        padding: 0;
+    
+                        img {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+                .containernum {
+                    width: 100%;
+                   
+                    
+                    h5 {
+                        text-align: center;
+                        font-size: 15px;
+                    }
                 }
             }
-
-            .containernum {
-                background-color: white;
+            
+            .containerform{
+                background: rgb(2,66,120);
+                background: linear-gradient(90deg, rgba(2,66,120,1) 0%, rgba(255,69,12,1) 100%);
+                grid-row: 1;
                 width: 100%;
-                grid-column: 1/4;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+
+                .tituloform {
+                    text-align: center;
+                    height: auto;
+                    
+                    
+                    h3 {
+                        width: 100%;
+                        margin: 3%;
+                    }
+                
+    
+                    .form {
+                        font-size: 13px;
+                        margin-bottom: 15px;
+                        width: 100%;
+                    
+                        input {
+                            width: 100%;
+                            padding: 6px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            
+                        }
+                    }
+                    button {
+                        background-color: #4CAF50;
+                        color: white;
+                        padding: 3px 60px;
+                        margin: 4%;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                  
+                        &:hover {
+                          background-color: #45a049;
+                        }
+                    }
+                }
             }
         }
-
-
     }
                                     // COMIENZO PAGINA 2 "PINTURAS"
 
     .layoutpinturas {
         background-color: #FF450C;
-        // width: 100%;
-
-
+        
         .layoutcarousel {
             background-color: #FF450C;
             width: 100%;
             margin: 0;
             padding: 0;
-            // display: grid !important;
-            // grid-template-columns: auto auto auto;
 
             .carouselpadre {
                 background-color: #FF450C;
@@ -236,11 +605,10 @@
 
 
                 .carousel {
-                    height: 50vh;
+                    height: 50vh !important;
                     width: 100%;
                     padding: 0;
                     grid-column: 1/4;
-
 
                     .carouselhijo {
                         background-color: red;
@@ -249,8 +617,6 @@
                         width: 100%;
                         object-fit: cover;
                         padding: 0;
-
-
                     }
                 }
             }
@@ -425,68 +791,72 @@
             grid-template-columns: auto auto auto;
             background-image: cover;
             width: 100%;
-            height: 50vh;
+            height: 50vh !important;
 
            div {
 
             h1 {
                 font-size: 30px;
                 padding-bottom: 10%;
+                color: white;
             }
            }
 
         }
-    }
-    .primerarticulo {
-        display: grid !important;
-        grid-template-columns: auto auto;
-
-        .interiores {
-            grid-column: 1/3;
-            width: 80%;
-        }
-        .neutros {
-            grid-column: 1/3;
-            width: 80%;
-        }
-        .naturales {
-            grid-column: 1/3;
-            width: 80%;
-        }
-        .audaces {
-            grid-column: 1/3;
-            width: 80%;
-        }
-    }
-    .segundoarticulo {
-        display: grid !important;
-        grid-template-columns: auto auto;
-
-        .exteriores {
-
-            grid-column: 1/4;
+        .introduccion {
             width: 100%;
         }
-        .frescos {
-            grid-column: 1/3;
-            width: 80%;
+        .primerarticulo {
+            display: grid !important;
+            grid-template-rows: auto auto auto auto;
+    
+            .interiores {
+                grid-row: 1;
+                width: 100%;
+            }
+            .neutros {
+                grid-row: 2;
+                width: 80%;
+            }
+            .naturales {
+                grid-row: 3;
+                width: 80%;
+            }
+            .audaces {
+                grid-row: 4;
+                width: 80%;
+            }
         }
-        .organicos {
-            grid-column: 1/3;
-            width: 80%;
-        }
-        .detalles {
-            grid-column: 1/3;
-            width: 80%;
-        }
-        .conclusion3 {
-            grid-column: 1/4;
-            width: 100%;
-            text-align: center;
-            margin: 0;
-            padding: 0;
+        .segundoarticulo {
+            display: grid !important;
+            grid-template-rows: auto auto auto auto auto;
+    
+            .exteriores {
+                grid-row: 1;
+                width: 100%;
+            }
+            .frescos {
+                grid-row: 2;
+                width: 80%;
+            }
+            .organicos {
+                grid-row: 3;
+                width: 80%;
+            }
+            .detalles {
+                grid-row: 4;
+                width: 80%;
+            }
+            .conclusion3 {
+                grid-row: 5;
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
         }
     }
+    
 
                             // COMIENZO DE PAGINA 4 "CONSEJOS"
 
@@ -494,17 +864,16 @@
 
         .bienvenida4{
             display: grid !important;
-            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
             background-image: cover;
             width: 100%;
             height: 50vh;
 
 
             div {
-                grid-column: 1/4;
+                grid-row: 1;
                 margin: 0;
                 padding-top: 5%;
-                grid-column: 1/4;
                 display: flex;
                 justify-content: start;
                 align-items: end;
@@ -512,7 +881,7 @@
 
                 h1 {
                   width: 50%;
-                  font-size: 22px;
+                  font-size: 22px !important;
                   padding: 0;
                   text-align: center;
                 }
@@ -520,64 +889,124 @@
         }
         .introduccion {
             display: grid !important;
-            grid-template-columns: auto auto auto;
+            grid-template-rows: 1fr;
 
             div {
-                grid-column: 1/4;
+                grid-column: 1;
+                h5 {
+                    font-size: 20px;
+                }
             }
         }
 
         .primerarticulo4 {
-            display: grid !important;
-            grid-template-columns: auto auto auto;
-            padding-bottom: 5%;
-
+          height: 50%;
+          width: 100%;
+          border-radius: 0;
+          margin: 0;
+        
             .titulo1 {
-                grid-column: 1/4;
+                grid-row: 1;
                 width: 100%;
+                padding: 2%;
+                h1 {
+                    font-size: 20px;
+                }
+           
             }
             .inspeccion {
-                grid-column: 1/4;
-                width: 80%;
+                grid-row: 2;
+                width: 90%;
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 16px;
+                }
             }
             .limpieza {
-                grid-column: 1/4;
-                width: 80%;
+                grid-row: 3;
+                width: 90%;
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 16px;
+                }
             }
             .proteccion {
-                grid-column: 1/4;
-                width: 80%;
+                grid-row: 4;
+                width: 90%;
+    
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 16px;
+                }
             }
         }
         .segundoarticulo4 {
-            display: grid !important;
-            grid-template-columns: auto auto auto;
-
-            h1 {
-                color: white;
-            }
+           height: 50%;
+           width: 100%;
+           border-radius: 0px;
 
             .titulo2 {
-                grid-column: 1/4;
+                grid-row: 1;
                 width: 100%;
+                padding: 2%;
+                h1 {
+                    font-size: 20px;
+                }
             }
             .seleccion {
-                grid-column: 1/4;
-                width: 80%;
+                grid-row: 2;
+                width: 90%;
+                h3 {
+                    font-size:18px;
+                }
+                p {
+                    font-size: 16px;
+                }
             }
             .humedad {
-                grid-column: 1/4;
-                width: 80%;
+                grid-row: 3;
+                width: 90%;
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 16px;
+                }
             }
             .mantenimiento {
-                grid-column: 1/4;
-                width: 80%;
-            }
-            .conclusion4 {
-                grid-column: 1/4;
+                grid-row: 4;
                 width: 90%;
-                color: white;
-
+               
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+        .video {
+            grid-template-rows: auto;
+            div {
+                grid-row: 1;
+                h5 {
+                    font-size: 22px;
+                }
+            }
+            .contenedorvideo {
+                margin: 0;
+                padding: 0;
+                iframe {
+                    height: 350px;
+                    width: 100%;
+                    margin: 4%;
+                }
             }
         }
     }
@@ -589,7 +1018,7 @@
         .bienvenida5{
             display: grid !important;
             grid-template-columns: auto auto auto auto;
-            height: 95vh;
+            height: 100vh !important;
 
 
             .containerimg {
@@ -603,14 +1032,14 @@
                 margin: 0;
 
                 h1 {
-                    font-size: 28px;
+                    font-size: 25px !important;
                 }
                 h5 {
-                    font-size: 20px;
+                    font-size: 18px !important;
                     padding: 3%;
                 }
                 p {
-                    font-size: 14px;
+                    font-size: 16px !important;
                 }
             }
         }
@@ -679,311 +1108,6 @@
                     font-size: 18px;
                 }
             }
-        }
-    }
-}
-
-                                    // TABLET
-
-
-@media (min-width: 500px) and (max-width:800px) {
-
-    .bienvenida4{
-        display: grid !important;
-        grid-template-columns: auto auto auto;
-        background-image: url(../images/pagina4.jpg);
-        background-size: 100% 100%;
-        width: 100% !important;
-        height: 80vh;
-
-        div {
-            grid-column: 1/4;
-            margin: 0;
-            padding-bottom:2%;
-            grid-column: 1/4;
-            display: flex;
-            justify-content: start;
-            align-items: end;
-            flex-direction: column;
-
-            h1 {
-              
-              width: 50%;
-              font-size: 25px !important;
-              padding: 0;
-              margin-bottom: 4%;
-              text-align: center;
-            }
-        }
-
-        
-    }
-
-
-                    // AJUSTES TABLET PAGINA 3 "TENDENCIAS"
-    .pag3sect {
-        background-color:white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        .bienvenida2 {
-            background-image: url(../images/tendencias.webp);
-            background-size: 100% 100%;
-            width: 100%;
-            height: 80vh;
-    
-            div {
-                height: 70%;
-                h1 {
-                    text-align: center;
-                    font-size: 32px;
-                    font-family: 'Cinzel', serif;
-                    letter-spacing: 2px;
-                    
-                }
-    
-            }
-    
-        }
-    }    
-
-                // AJUSTE TABLET A PAGINA 1 "INICIO"
-    .layoutmain {
-        display: grid !important;
-        grid-template-columns: auto auto auto;
-
-        .section {
-            
-            background: rgb(255,255,255) !important;
-            background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(255,69,12,1) 50%, rgba(216,216,217,1) 100%) !important;
-            background-image: none;
-            grid-column: 1/4;
-            
-
-
-
-            div {
-                text-align: center;
-                padding: 0;
-                margin: 0;
-                width: 100%;
-                
-                p {
-                    color: black;
-                }
-                h1 {
-                    color: black;
-                }
-            }
-        }
-
-    }
-
-    .art1 {
-        display: grid !important;
-        grid-template-columns: auto auto auto;
-        margin-bottom: 5%;
-
-        .div1 {
-            width: 100%;
-            grid-column: 1/4;
-        }
-        .div2 {
-            width: 100%;
-            grid-column: 1/4;
-        }
-        .div3 {
-            width: 100%;
-            grid-column: 1/4;
-        }
-    }
-
-                // AJUSTES TABLET A PAGINA 2 "CAROUSEL Y BOXES"
-
-    .layoutpinturas {
-        background-color: #FF450C;
-        // width: 100%;
-
-
-        .layoutcarousel {
-            background-color: #FF450C;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            // display: grid !important;
-            // grid-template-columns: auto auto auto;
-
-            .carouselpadre {
-                background-color: #FF450C;
-                width: 100%;
-                margin: 0 !important;
-                display: grid !important;
-                grid-template-columns: auto auto auto;
-
-
-                .carousel {
-                    height: 70vh;
-                    width: 100%;
-                    padding: 0;
-                    grid-column: 1/4;
-
-
-                    .carouselhijo {
-                        background-color: red;
-                        align-items: center;
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
-                        padding: 0;
-
-
-                    }
-                }
-            }
-        }
-    }
-    .selecpintura {
-
-        display: grid !important;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto auto auto auto;
-
-         .titulo {
-             grid-column: 1/3;
-
-             h1 {
-                font-size: 25px;
-                text-align: center;
-            }
-             p {
-                 font-size: 16px;
-             }
-        }
-
-        .one {
-           grid-column: 1/3;
-           width: 80%;
-
-        }
-        .two {
-            grid-column: 1/3;
-            width: 80%;
-        }
-        .three {
-            grid-column: 1/3;
-            width: 80%;
-        }
-        .four {
-            grid-column: 1/3;
-            width: 80%;
-        }
-        .five {
-            grid-column: 1/3;
-            width: 80%;
-        }
-        .six {
-            grid-column: 1/3;
-            width: 80%;
-        }
-        .piedeart1 {
-            grid-column: 1/3;
-            width: 100%;
-            h5 {
-                font-size: 18px;
-            }
-        }
-
-    }
-    .tiposdepintura {
-
-        display: grid !important;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto auto auto auto;
-
-         .titulo2 {
-             grid-column: 1/3;
-
-             h1 {
-                font-size: 25px;
-                text-align: center;
-            }
-             p {
-                 font-size: 16px;
-                 text-align: start;
-             }
-        }
-
-        .one2 {
-           grid-column: 1/3;
-           width: 80%;
-
-        }
-        .two2 {
-            grid-column: 1/3;
-            width: 80%;
-        }
-        .three2 {
-            grid-column: 1/3;
-            width: 80%;
-        }
-        .piedeart2 {
-            grid-column: 1/3;
-            width: 100%;
-            h5 {
-                font-size: 18px;
-
-            }
-        }
-
-    }
-    .evaluacionsup {
-
-        display: grid !important;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto auto auto auto;
-
-         .titulo3 {
-             grid-column: 1/3;
-
-             h1 {
-                font-size: 25px;
-                text-align: center;
-            }
-             p {
-                 font-size: 16px;
-                 text-align: start;
-             }
-        }
-
-        .one3 {
-           grid-column: 1/3;
-           width: 80%;
-
-        }
-        .two3 {
-            grid-column: 1/3;
-            width: 80%;
-        }
-        .three3 {
-            grid-column: 1/3;
-            width: 80%;
-        }
-        .piedeart3 {
-            grid-column: 1/3;
-            width: 100%;
-            h5 {
-                font-size: 18px;
-
-            }
-        }
-
-    }
-                            // AJUSTE A IMAGEN "ANTES Y DESPUES" DE PAGINA 5 
-    .filosofia {
-        img {
-            width: 90%;
-            height: 90%;
         }
     }
 }

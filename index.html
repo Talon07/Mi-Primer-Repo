@@ -7,11 +7,13 @@
     <meta name="description" content="En Pigments, nuestra meta es embellecer y transformar tus espacios en verdaderas obras de arte. Nos enorgullecemos de ofrecer soluciones creativas y personalizadas que reflejen tus gustos y estilo. Nuestro equipo de expertos está comprometido con la excelencia, utilizando materiales de alta calidad y técnicas innovadoras para garantizar resultados cautivadores y duraderos. Con pasión por el arte y el diseño, buscamos inspirar y enriquecer tu vida a través de la belleza y la creatividad en cada proyecto que realizamos. ¡Déjanos llevar tus ideas a la realidad y crear ambientes que te enamoren!">
     <meta name="keywords" content="PINTURA, COLORES, ESTILOS, REMODELACION, TENDENCIAS, PROYECTOS">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,400&display=swap" rel="stylesheet">
     <title>Pigments</title>
+    <link rel="icon" href="./images/logo.svg" type="image/x-icon">
 </head>
 <body>
 
@@ -36,7 +38,7 @@
     <main class="container-fluid">
       <div class="row layoutmain">
           <section class="col-12 section">
-              <div>
+              <div class="animate__animated animate__flipInY">
               <p>Transforma tu espacio con colores que inspiran</p>
               <h1>LOS COLORES QUE BUSCAS, EN UN SOLO LUGAR.</h1>
               </div>
@@ -47,50 +49,74 @@
 
             <div class="col-4 div1">
               <h1>Cómo elegir la pintura perfecta para tu proyecto</h1>
-              <img src="./images/articulo1.jpg" alt="dormitorio">
+              <img src="./images/articulo1.webp" alt="dormitorio">
               <p>En este artículo, descubrirás valiosas pautas para seleccionar la pintura perfecta que elevará la belleza y durabilidad de tu proyecto. Elegir la pintura adecuada es un paso esencial en cualquier proyecto de decoración o renovación, ya sea para tu hogar, lugar de trabajo o cualquier otro espacio. </p>
               <a href="./pages/pinturas.html">Leer más</a>
             </div>
 
             <div class="col-3 div2">
                <h1>Tendencias de colores en el año actual</h1>
-               <img src="./images/articulo2.jpg" alt="colores tendencia">
+               <img src="./images/articulo2.webp" alt="colores tendencia">
                <p>Aquí te sumergirás en el emocionante mundo de las tendencias de color para interiores y exteriores en el año actual. Descubrirás las paletas de colores más en boga que han conquistado los corazones de diseñadores y amantes del hogar. Exploraremos una amplia gama de estilos, desde aquellos que irradian calma y serenidad, hasta los que abrazan la audacia y la expresión artística.</p>
                <a href="./pages/tendencias.html">Leer más</a>
             </div>
 
             <div class="col-4 div3">
                 <h1>Consejos para el mantenimiento y conservación de pinturas</h1>
-                <img src="./images/articulo3.jpg" alt="tachos de pintura">
+                <img src="./images/articulo3.webp" alt="tachos de pintura">
                 <p>Te brindaremos valiosos consejos y técnicas para el mantenimiento y conservación adecuada de tus pinturas, asegurando que mantengan su belleza y calidad a lo largo del tiempo. Exploraremos cómo proteger las superficies pintadas tanto en interiores como exteriores, evitando el desgaste causado por la exposición al sol, la humedad y condiciones climáticas adversas.</p>
                 <a href="./pages/consejos.html">Leer más</a>
             </div>
           </article>
       </div>
      
-  </main>
-  <footer class="container-fluid">
+</main>
+<footer class="container-fluid">
     <div class="row layoutfooter">
-        <div class="col-4 containerul">
-            <ul>
-                <li> <a href=""><img class="icono" src="./images/gmail.svg" alt="gmail" ></a></li>
-                <li><a href=""><img class="icono" src="./images/instagram.svg" alt="instagram"></a></li>
-                <li><a href=""><img class="icono" src="./images/whatsapp.svg" alt="whatsapp"></a></li>
-                <li><a href=""><img class="icono" src="./images/facebook.svg" alt="facebook"></a></li>
-            </ul>
-            <!-- esto serian los link que llevarian a los usuarios a mis redes sociales, pero como no tengo las redes aun, estan rotos. -->
-        </div> 
-
-        <div class="col-4 containerlogo">
-            <img src="./images/logo.svg" alt="logo" height="50px" width="50px">
-            <h1>PIGMENTS</h1>
+        <div class="col-6 containerlogo">
+            <div class="sublogo">
+                <img src="./images/logo.svg" alt="logo">
+                <h1><a href="#header">PIGMENTS</a></h1>
+            </div>
+            <div class="containerul">
+                <ul>
+                    <li><a href=""><img class="icono" src="./images/gmail.svg" alt="gmail" ></a></li>
+                    <li><a href=""><img class="icono" src="./images/instagram.svg" alt="instagram"></a></li>
+                    <li><a href=""><img class="icono" src="./images/whatsapp.svg" alt="whatsapp"></a></li>
+                    <li><a href=""><img class="icono" src="./images/facebook.svg" alt="facebook"></a></li>
+                </ul>
+            </div>
+            <div class="containernum">
+                <h5>Contacto: 3512049674</h5>
+            </div>
         </div>
-
-       <div class="col-4 containernum">
-        <h5>Copyright 2023</h5>
-       </div>
+        <div class="col-6 containerform">
+              <div class="tituloform">
+                <h3>INGRESÁ TUS DATOS</h3>
+                <p>y nos pondremos en contacto</p>
+                <form>
+                  <div class="form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                  </div>
+                  <div class="form">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" required>
+                  </div>
+                  <div class="form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                  </div>
+                  <div class="form">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" required>
+                  </div>
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+        </div>
     </div>
-</footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</footer>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html> 

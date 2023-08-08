@@ -280,6 +280,10 @@ header .contenedorheader .divcenter {
   justify-content: center;
   align-items: center;
 }
+header .contenedorheader .divcenter a {
+  color: black;
+  text-decoration: none;
+}
 header .contenedorheader .divcenter h1 {
   font-size: 35px;
   font-family: "Cinzel", serif;
@@ -304,63 +308,109 @@ header .contenedorheader .navcenter ul {
 header .contenedorheader .navcenter ul a {
   text-decoration: none;
   color: black;
-  transition: 0.3s linear;
   object-fit: cover;
   font-size: 18px;
 }
 header .contenedorheader .navcenter ul a:hover {
+  transition: 0.3s linear;
   border-bottom: 6px solid orangered;
 }
 
 footer {
-  background-color: white;
-  height: 10vh;
+  height: 30vh;
+}
+footer .layoutfooter {
+  height: 30vh;
+}
+footer .layoutfooter .containerlogo {
   margin: 0;
   padding: 0;
-}
-footer .containerul {
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 10vh;
+  flex-direction: column;
+  height: auto;
 }
-footer .containerul ul {
-  list-style-type: none;
+footer .layoutfooter .containerlogo .sublogo {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height: 100%;
+  flex-direction: row;
+  margin: 2%;
+}
+footer .layoutfooter .containerlogo .sublogo h1 {
+  border-bottom: 2px solid gray;
+  font-size: 35px;
+}
+footer .layoutfooter .containerlogo .sublogo h1 a {
+  text-decoration: none;
+  color: black;
+}
+footer .layoutfooter .containerlogo .sublogo img {
+  width: 30px;
+  height: 30px;
+}
+footer .layoutfooter .containerlogo .containerul {
   width: 100%;
-  margin: 10px;
+}
+footer .layoutfooter .containerlogo .containerul ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   padding: 0;
 }
-footer .containerul ul li {
-  text-decoration: none;
-  font-size: 10px;
+footer .layoutfooter .containerlogo .containerul ul img {
+  width: 30px;
+  height: 30px;
 }
-footer .containerul ul img {
-  height: 28px;
-  width: 28px;
+footer .layoutfooter .containerlogo .containernum {
+  width: 100%;
 }
-footer .containerlogo {
+footer .layoutfooter .containerlogo .containernum h5 {
+  text-align: center;
+  font-size: 18px;
+}
+footer .layoutfooter .containerform {
+  background: rgb(2, 66, 120);
+  background: linear-gradient(90deg, rgb(2, 66, 120) 0%, rgb(255, 69, 12) 100%);
+  width: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 10vh;
 }
-footer .containerlogo h1 {
-  font-family: "Cinzel", serif;
-  font-family: "Montserrat", sans-serif;
-  font-size: 32px;
-  margin: 15px;
+footer .layoutfooter .containerform .tituloform {
+  text-align: center;
+  height: auto;
+  color: white;
 }
-footer .containernum {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
+footer .layoutfooter .containerform .tituloform h3 {
+  font-size: 22px;
+  margin: 3%;
 }
-footer .containernum h5 {
+footer .layoutfooter .containerform .tituloform p {
   font-size: 15px;
+}
+footer .layoutfooter .containerform .tituloform form .form {
+  font-size: 14px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+footer .layoutfooter .containerform .tituloform form .form input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+footer .layoutfooter .containerform .tituloform form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 3px 60px;
+  margin: 4%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer .layoutfooter .containerform .tituloform form button:hover {
+  background-color: #45a049;
 }
 
 main {
@@ -437,9 +487,12 @@ main .art1 .div1 a {
   border-radius: 5px;
   padding: 10px 60px 10px 60px;
 }
+main .art1 .div1 a:active {
+  background-color: gray;
+}
 main .art1 .div2 {
   height: 800px;
-  background-color: #00447D;
+  background-color: rgb(57, 145, 175);
   color: white;
   margin: 10px 0px 30px 0px;
   display: flex;
@@ -470,6 +523,9 @@ main .art1 .div2 a {
   border: 2px solid rgb(227, 223, 223);
   border-radius: 5px;
   padding: 10px 60px 10px 60px;
+}
+main .art1 .div2 a:active {
+  background-color: gray;
 }
 main .art1 .div3 {
   height: 700px;
@@ -503,6 +559,9 @@ main .art1 .div3 a {
   border: 2px solid rgb(227, 223, 223);
   border-radius: 5px;
   padding: 10px 60px 10px 60px;
+}
+main .art1 .div3 a:active {
+  background-color: gray;
 }
 
 .pg2main {
@@ -798,6 +857,10 @@ main .art1 .div3 a {
 .pg2main .evaluacionsup .one3 p {
   text-align: start;
 }
+.pg2main .evaluacionsup .one3 img {
+  height: 30px;
+  width: 30px;
+}
 .pg2main .evaluacionsup .two3 {
   margin: 30px;
   border-radius: 4px;
@@ -812,6 +875,10 @@ main .art1 .div3 a {
 .pg2main .evaluacionsup .two3 p {
   text-align: start;
 }
+.pg2main .evaluacionsup .two3 img {
+  height: 30px;
+  width: 30px;
+}
 .pg2main .evaluacionsup .three3 {
   margin: 30px;
   border-radius: 4px;
@@ -825,6 +892,10 @@ main .art1 .div3 a {
 }
 .pg2main .evaluacionsup .three3 p {
   text-align: start;
+}
+.pg2main .evaluacionsup .three3 img {
+  height: 30px;
+  width: 30px;
 }
 .pg2main .evaluacionsup .piedeart3 {
   width: 100%;
@@ -845,7 +916,7 @@ main .art1 .div3 a {
 .pag3sect .bienvenida2 {
   background-image: url(../images/tendencias.webp);
   background-size: 100% 100%;
-  width: 70%;
+  width: 75%;
   height: 80vh;
 }
 .pag3sect .bienvenida2 div {
@@ -862,17 +933,19 @@ main .art1 .div3 a {
   font-size: 40px;
   font-family: "Cinzel", serif;
   letter-spacing: 2px;
+  color: white;
 }
 .pag3sect .introduccion {
   text-align: center;
   padding: 40px;
+  width: 70%;
 }
 .pag3sect .introduccion h5 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 .pag3sect .primerarticulo {
-  background-image: url(../images/interiores.jpg);
+  background-image: url(../images/interiores.webp);
   background-size: 100% 100%;
   display: flex;
   justify-content: center;
@@ -886,7 +959,7 @@ main .art1 .div3 a {
   width: 100%;
 }
 .pag3sect .primerarticulo .interiores h1 {
-  font-size: 30px;
+  font-size: 28px;
   padding: 10px;
   font-family: "Montserrat", sans-serif;
 }
@@ -898,10 +971,14 @@ main .art1 .div3 a {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .pag3sect .primerarticulo .neutros h3 {
-  font-size: 25px;
+  font-size: 24px;
 }
 .pag3sect .primerarticulo .neutros p {
   font-size: 18px;
+}
+.pag3sect .primerarticulo .neutros img {
+  height: 30px;
+  width: 30px;
 }
 .pag3sect .primerarticulo .naturales {
   margin: 30px;
@@ -911,10 +988,14 @@ main .art1 .div3 a {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .pag3sect .primerarticulo .naturales h3 {
-  font-size: 25px;
+  font-size: 24px;
 }
 .pag3sect .primerarticulo .naturales p {
   font-size: 18px;
+}
+.pag3sect .primerarticulo .naturales img {
+  height: 30px;
+  width: 30px;
 }
 .pag3sect .primerarticulo .audaces {
   margin: 30px;
@@ -924,13 +1005,17 @@ main .art1 .div3 a {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .pag3sect .primerarticulo .audaces h3 {
-  font-size: 25px;
+  font-size: 24px;
 }
 .pag3sect .primerarticulo .audaces p {
   font-size: 18px;
 }
+.pag3sect .primerarticulo .audaces img {
+  height: 30px;
+  width: 30px;
+}
 .pag3sect .segundoarticulo {
-  background-image: url(../images/exteriores.jpg);
+  background-image: url(../images/exteriores.webp);
   background-size: 100% 100%;
   display: flex;
   justify-content: center;
@@ -944,7 +1029,7 @@ main .art1 .div3 a {
   width: 100%;
 }
 .pag3sect .segundoarticulo .exteriores h1 {
-  font-size: 30px;
+  font-size: 28px;
   padding: 10px;
   font-family: "Montserrat", sans-serif;
 }
@@ -956,10 +1041,14 @@ main .art1 .div3 a {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .pag3sect .segundoarticulo .frescos h3 {
-  font-size: 25px;
+  font-size: 24px;
 }
 .pag3sect .segundoarticulo .frescos p {
   font-size: 18px;
+}
+.pag3sect .segundoarticulo .frescos img {
+  height: 30px;
+  width: 30px;
 }
 .pag3sect .segundoarticulo .organicos {
   margin: 30px;
@@ -969,10 +1058,14 @@ main .art1 .div3 a {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .pag3sect .segundoarticulo .organicos h3 {
-  font-size: 25px;
+  font-size: 24px;
 }
 .pag3sect .segundoarticulo .organicos p {
   font-size: 18px;
+}
+.pag3sect .segundoarticulo .organicos img {
+  height: 30px;
+  width: 30px;
 }
 .pag3sect .segundoarticulo .detalles {
   margin: 30px;
@@ -982,10 +1075,14 @@ main .art1 .div3 a {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .pag3sect .segundoarticulo .detalles h3 {
-  font-size: 25px;
+  font-size: 24px;
 }
 .pag3sect .segundoarticulo .detalles p {
   font-size: 18px;
+}
+.pag3sect .segundoarticulo .detalles img {
+  height: 30px;
+  width: 30px;
 }
 .pag3sect .segundoarticulo .conclusion {
   width: 100%;
@@ -995,15 +1092,15 @@ main .art1 .div3 a {
 }
 
 .pagina4 {
-  background-color: white;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(0, 68, 125) 50%, rgb(255, 69, 12) 73%);
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .pagina4 .bienvenida4 {
   background-image: url(../images/pagina4.webp);
   background-size: 100% 100%;
-  width: 80%;
+  width: 75%;
   height: 80vh;
 }
 .pagina4 .bienvenida4 div {
@@ -1016,7 +1113,7 @@ main .art1 .div3 a {
 }
 .pagina4 .bienvenida4 div h1 {
   text-align: center;
-  font-size: 32px;
+  font-size: 34px;
   font-family: "Cinzel", serif;
   letter-spacing: 4px;
   padding-top: 50px;
@@ -1025,148 +1122,178 @@ main .art1 .div3 a {
 .pagina4 .introduccion {
   text-align: center;
   padding: 40px;
+  margin: 2%;
 }
 .pagina4 .introduccion h5 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 26px;
+  color: black;
 }
 .pagina4 .primerarticulo4 {
-  background-color: #FF764C;
-}
-.pagina4 .primerarticulo4 .titulo1 {
-  padding-top: 25px;
+  background-color: white;
+  border-radius: 20px;
   display: flex;
-  justify-content: start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 .pagina4 .primerarticulo4 .titulo1 h1 {
-  font-size: 30px;
-  padding: 10px;
-  font-family: "Montserrat", sans-serif;
-  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 35px 5px 5px 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
 }
 .pagina4 .primerarticulo4 .inspeccion {
-  background-color: white;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: start;
-  padding: 15px;
-  margin: 15px;
+  background-color: rgb(241, 236, 236);
+  border-radius: 10px;
+  margin: 2%;
+  padding: 2%;
+  width: 60%;
+  height: 50%;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
 }
 .pagina4 .primerarticulo4 .inspeccion h3 {
-  font-size: 25px;
+  font-size: 22px;
 }
 .pagina4 .primerarticulo4 .inspeccion p {
   font-size: 18px;
 }
+.pagina4 .primerarticulo4 .inspeccion img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
 .pagina4 .primerarticulo4 .limpieza {
-  background-color: white;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: start;
-  padding: 15px;
-  margin: 15px;
+  background-color: rgb(241, 236, 236);
+  border-radius: 10px;
+  margin: 2%;
+  padding: 2%;
+  width: 60%;
+  height: 50%;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
 }
 .pagina4 .primerarticulo4 .limpieza h3 {
-  font-size: 25px;
+  font-size: 22px;
 }
 .pagina4 .primerarticulo4 .limpieza p {
   font-size: 18px;
 }
+.pagina4 .primerarticulo4 .limpieza img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
 .pagina4 .primerarticulo4 .proteccion {
-  background-color: white;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: start;
-  padding: 15px;
-  margin: 15px;
+  background-color: rgb(241, 236, 236);
+  border-radius: 10px;
+  margin: 2%;
+  padding: 2%;
+  width: 60%;
+  height: 50%;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5%;
 }
 .pagina4 .primerarticulo4 .proteccion h3 {
-  font-size: 25px;
+  font-size: 22px;
 }
 .pagina4 .primerarticulo4 .proteccion p {
   font-size: 18px;
 }
-.pagina4 .segundoarticulo4 {
-  background-color: #00447D;
-  display: flex;
-  justify-content: end;
-  align-items: end;
+.pagina4 .primerarticulo4 .proteccion img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
 }
-.pagina4 .segundoarticulo4 .titulo2 {
-  padding-top: 25px;
+.pagina4 .segundoarticulo4 {
+  background-color: white;
+  border-radius: 20px;
   display: flex;
-  justify-content: end;
-  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5);
+  margin: 3%;
 }
 .pagina4 .segundoarticulo4 .titulo2 h1 {
-  font-size: 30px;
-  padding: 10px;
-  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 28px;
+  padding: 35px 5px 5px 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
 }
 .pagina4 .segundoarticulo4 .seleccion {
-  background-color: white;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: start;
-  padding: 15px;
-  margin: 15px;
+  background-color: rgb(241, 236, 236);
+  border-radius: 10px;
+  margin: 2%;
+  padding: 2%;
+  width: 60%;
+  height: 50%;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
 }
 .pagina4 .segundoarticulo4 .seleccion h3 {
-  font-size: 25px;
+  font-size: 22px;
 }
 .pagina4 .segundoarticulo4 .seleccion p {
   font-size: 18px;
 }
+.pagina4 .segundoarticulo4 .seleccion img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
 .pagina4 .segundoarticulo4 .humedad {
-  background-color: white;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: start;
-  padding: 15px;
-  margin: 15px;
+  background-color: rgb(241, 236, 236);
+  border-radius: 10px;
+  margin: 2%;
+  padding: 2%;
+  width: 60%;
+  height: 50%;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
 }
 .pagina4 .segundoarticulo4 .humedad h3 {
-  font-size: 25px;
+  font-size: 22px;
 }
 .pagina4 .segundoarticulo4 .humedad p {
   font-size: 18px;
 }
+.pagina4 .segundoarticulo4 .humedad img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
 .pagina4 .segundoarticulo4 .mantenimiento {
-  background-color: white;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: start;
-  padding: 15px;
-  margin: 15px;
+  background-color: rgb(241, 236, 236);
+  border-radius: 10px;
+  margin: 2%;
+  padding: 2%;
+  width: 60%;
+  height: 50%;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5%;
 }
 .pagina4 .segundoarticulo4 .mantenimiento h3 {
-  font-size: 25px;
+  font-size: 22px;
 }
 .pagina4 .segundoarticulo4 .mantenimiento p {
   font-size: 18px;
 }
-.pagina4 .segundoarticulo4 .conclusion4 {
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
-  width: 90%;
-  font-size: 18px;
-  color: white;
+.pagina4 .segundoarticulo4 .mantenimiento img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
 }
 .pagina4 .video {
-  background-color: #FF450C;
+  background-color: #ff450c;
 }
 .pagina4 .video div {
   padding-top: 30px;
@@ -1184,22 +1311,26 @@ main .art1 .div3 a {
   align-items: center;
   padding: 30px 0px 50px 0px;
 }
+.pagina4 .video .contenedorvideo iframe {
+  height: 500px;
+  width: 80%;
+}
 
-.pagina5 .bienvenida5 {
-  background-color: white;
+.pagina5 div .bienvenida5 {
+  background-color: orangered;
   height: 80vh;
   margin: 0;
   padding: 0;
 }
-.pagina5 .bienvenida5 .containerimg {
+.pagina5 div .bienvenida5 .containerimg {
   margin: 0;
   padding: 0;
 }
-.pagina5 .bienvenida5 .containerimg img {
+.pagina5 div .bienvenida5 .containerimg img {
   height: 100%;
   width: 100%;
 }
-.pagina5 .bienvenida5 .containertitulo {
+.pagina5 div .bienvenida5 .containertitulo {
   height: 90%;
   background: rgb(1, 23, 41);
   background: linear-gradient(90deg, rgb(1, 23, 41) 0%, rgba(255, 69, 12, 0.8324579832) 50%, rgb(2, 66, 120) 100%);
@@ -1212,53 +1343,53 @@ main .art1 .div3 a {
   color: white;
   height: 100%;
 }
-.pagina5 .bienvenida5 .containertitulo h1 {
+.pagina5 div .bienvenida5 .containertitulo h1 {
   font-family: "Cinzel", serif;
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   border-bottom: 3px solid gray;
 }
-.pagina5 .bienvenida5 .containertitulo h5 {
+.pagina5 div .bienvenida5 .containertitulo h5 {
   font-family: "Cinzel", serif;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
 }
-.pagina5 .bienvenida5 .containertitulo p {
+.pagina5 div .bienvenida5 .containertitulo p {
   font-size: 19px;
   font-family: "Montserrat", sans-serif;
 }
-.pagina5 article {
+.pagina5 div article {
   background-color: white;
   margin: 0;
   padding: 0;
 }
-.pagina5 article .mision {
-  background-color: #D8D8D9;
-  height: 50vh;
+.pagina5 div article .mision {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   font-size: 20px;
+  background-color: #D8D8D9;
+  height: 50vh;
   margin: 50px 0px 50px 0px;
 }
-.pagina5 article .mision h3 {
+.pagina5 div article .mision h3 {
   font-size: 40px;
   letter-spacing: 3px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.pagina5 article .equipo {
-  background-color: #00447D;
+.pagina5 div article .equipo {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   font-size: 20px;
+  background-color: #00447D;
   color: #D8D8D9;
 }
-.pagina5 article .imgequipo {
+.pagina5 div article .imgequipo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1268,565 +1399,38 @@ main .art1 .div3 a {
   background-color: #00447D;
   padding: 0;
 }
-.pagina5 article .imgequipo img {
+.pagina5 div article .imgequipo img {
   width: 100%;
   height: 100%;
 }
-.pagina5 article .filosofia {
-  background-color: #FF450C;
+.pagina5 div article .filosofia {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   font-size: 20px;
+  background-color: #FF450C;
   margin-top: 50px;
   padding: 30px 0px 20px 0px;
 }
-.pagina5 article .filosofia p {
-  padding: 20px 30px 20px 30px;
+.pagina5 div article .filosofia h3 {
+  font-size: 30px;
+  color: white;
 }
-.pagina5 .conclusion5 {
+.pagina5 div article .filosofia p {
+  padding: 20px 30px 20px 30px;
+  color: white;
+}
+.pagina5 div article .conclusion5 {
   text-align: center;
   background-color: #FF450C;
 }
-.pagina5 .conclusion5 h5 {
+.pagina5 div article .conclusion5 h5 {
   padding: 20px 30px 20px 30px;
+  color: white;
 }
 
-@media (max-width: 500px) {
-  header {
-    background-color: white;
-    width: 100%;
-  }
-  header .contenedorheader {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: grid !important;
-    grid-template-columns: auto auto auto;
-  }
-  header .contenedorheader .divcenter {
-    width: 100%;
-    grid-column: 1/4;
-    padding: 4%;
-    margin: 0;
-    border-bottom: 2px solid gray;
-  }
-  header .contenedorheader .divcenter h1 {
-    color: black;
-    font-size: 30px;
-    font-family: "Cinzel", serif;
-    font-family: "Montserrat", sans-serif;
-    margin: 4%;
-  }
-  header .contenedorheader .navcenter {
-    width: 100%;
-    grid-column: 1/4;
-    margin: 0;
-  }
-  header .contenedorheader .navcenter ul {
-    list-style-type: none;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  header .contenedorheader .navcenter ul li {
-    margin: 3%;
-  }
-  header .contenedorheader .navcenter ul a {
-    text-decoration: none;
-    color: black;
-    transition: 0.3s linear;
-    object-fit: cover;
-    font-size: 16px;
-  }
-  main .layoutmain {
-    display: grid !important;
-    grid-template-columns: auto auto auto;
-  }
-  main .layoutmain .section {
-    background: rgb(255, 255, 255) !important;
-    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgb(255, 69, 12) 50%, rgb(216, 216, 217) 100%) !important;
-    background-image: none;
-    grid-column: 1/4;
-    height: 50vh;
-  }
-  main .layoutmain .section div {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-  main .layoutmain .section div h1 {
-    color: black;
-    font-size: 29px;
-    color: #04355c;
-    font-stretch: narrower;
-  }
-  main .layoutmain .section div p {
-    color: black;
-    font-size: 14px;
-    color: #043359;
-  }
-  main .layoutmain .art1 {
-    display: grid !important;
-    grid-template-columns: auto auto auto;
-    margin-bottom: 5%;
-    margin-top: 0%;
-  }
-  main .layoutmain .art1 .div1 {
-    width: 100%;
-    grid-column: 1/4;
-  }
-  main .layoutmain .art1 .div1 h1 {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  main .layoutmain .art1 .div2 {
-    width: 100%;
-    grid-column: 1/4;
-  }
-  main .layoutmain .art1 .div2 h1 {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  main .layoutmain .art1 .div3 {
-    width: 100%;
-    grid-column: 1/4;
-  }
-  main .layoutmain .art1 .div3 h1 {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  footer {
-    background-color: white;
-    height: 30vh;
-    margin: 0;
-    padding: 0;
-  }
-  footer .layoutfooter {
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-  footer .layoutfooter .containerlogo {
-    background-color: white;
-    width: 100%;
-    grid-column: 1/4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .layoutfooter .containerlogo h1 {
-    border-bottom: 3px solid rgb(141, 141, 141);
-    padding: 2%;
-  }
-  footer .layoutfooter .containerul {
-    background-color: white;
-    width: 100%;
-    grid-column: 1/4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-  }
-  footer .layoutfooter .containerul ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-  }
-  footer .layoutfooter .containernum {
-    background-color: white;
-    width: 100%;
-    grid-column: 1/4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .layoutpinturas {
-    background-color: #FF450C;
-  }
-  .layoutpinturas .layoutcarousel {
-    background-color: #FF450C;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .layoutpinturas .layoutcarousel .carouselpadre {
-    background-color: #FF450C;
-    width: 100%;
-    margin: 0 !important;
-    display: grid !important;
-    grid-template-columns: auto auto auto;
-  }
-  .layoutpinturas .layoutcarousel .carouselpadre .carousel {
-    height: 50vh;
-    width: 100%;
-    padding: 0;
-    grid-column: 1/4;
-  }
-  .layoutpinturas .layoutcarousel .carouselpadre .carousel .carouselhijo {
-    background-color: red;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    padding: 0;
-  }
-  .layoutbox .pag2art1 {
-    display: grid !important;
-    grid-template-columns: auto auto auto;
-    margin: 0;
-  }
-  .layoutbox .pag2art1 .bienvenida {
-    padding-top: 3%;
-  }
-  .layoutbox .pag2art1 .bienvenida h1 {
-    text-align: center;
-    font-size: 25px;
-  }
-  .layoutbox .pag2art1 .bienvenida p {
-    font-size: 16px;
-  }
-  .layoutbox .selecpintura {
-    display: grid !important;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto auto auto;
-  }
-  .layoutbox .selecpintura .titulo {
-    grid-column: 1/3;
-  }
-  .layoutbox .selecpintura .titulo h1 {
-    font-size: 25px;
-    text-align: center;
-  }
-  .layoutbox .selecpintura .titulo p {
-    font-size: 16px;
-  }
-  .layoutbox .selecpintura .one {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .layoutbox .selecpintura .two {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .layoutbox .selecpintura .three {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .layoutbox .selecpintura .four {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .layoutbox .selecpintura .five {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .layoutbox .selecpintura .six {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .layoutbox .selecpintura .piedeart1 {
-    grid-column: 1/3;
-    width: 100%;
-  }
-  .layoutbox .selecpintura .piedeart1 h5 {
-    font-size: 18px;
-  }
-  .layoutbox .tiposdepintura {
-    display: grid !important;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto auto auto;
-  }
-  .layoutbox .tiposdepintura .titulo2 {
-    grid-column: 1/3;
-  }
-  .layoutbox .tiposdepintura .titulo2 h1 {
-    font-size: 25px;
-    text-align: center;
-  }
-  .layoutbox .tiposdepintura .titulo2 p {
-    font-size: 16px;
-    text-align: start;
-  }
-  .layoutbox .tiposdepintura .one2 {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .layoutbox .tiposdepintura .two2 {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .layoutbox .tiposdepintura .three2 {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .layoutbox .tiposdepintura .piedeart2 {
-    grid-column: 1/3;
-    width: 100%;
-  }
-  .layoutbox .tiposdepintura .piedeart2 h5 {
-    font-size: 18px;
-  }
-  .layoutbox .evaluacionsup {
-    display: grid !important;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto auto auto;
-  }
-  .layoutbox .evaluacionsup .titulo3 {
-    grid-column: 1/3;
-  }
-  .layoutbox .evaluacionsup .titulo3 h1 {
-    font-size: 25px;
-    text-align: center;
-  }
-  .layoutbox .evaluacionsup .titulo3 p {
-    font-size: 16px;
-    text-align: start;
-  }
-  .layoutbox .evaluacionsup .one3 {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .layoutbox .evaluacionsup .two3 {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .layoutbox .evaluacionsup .three3 {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .layoutbox .evaluacionsup .piedeart3 {
-    grid-column: 1/3;
-    width: 100%;
-  }
-  .layoutbox .evaluacionsup .piedeart3 h5 {
-    font-size: 18px;
-  }
-  .pag3sect .bienvenida2 {
-    display: grid !important;
-    grid-template-columns: auto auto auto;
-    background-image: cover;
-    width: 100%;
-    height: 50vh;
-  }
-  .pag3sect .bienvenida2 div h1 {
-    font-size: 30px;
-    padding-bottom: 10%;
-  }
-  .primerarticulo {
-    display: grid !important;
-    grid-template-columns: auto auto;
-  }
-  .primerarticulo .interiores {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .primerarticulo .neutros {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .primerarticulo .naturales {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .primerarticulo .audaces {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .segundoarticulo {
-    display: grid !important;
-    grid-template-columns: auto auto;
-  }
-  .segundoarticulo .exteriores {
-    grid-column: 1/4;
-    width: 100%;
-  }
-  .segundoarticulo .frescos {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .segundoarticulo .organicos {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .segundoarticulo .detalles {
-    grid-column: 1/3;
-    width: 80%;
-  }
-  .segundoarticulo .conclusion3 {
-    grid-column: 1/4;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  .pagina4 .bienvenida4 {
-    display: grid !important;
-    grid-template-columns: auto auto auto;
-    background-image: cover;
-    width: 100%;
-    height: 50vh;
-  }
-  .pagina4 .bienvenida4 div {
-    grid-column: 1/4;
-    margin: 0;
-    padding-top: 5%;
-    grid-column: 1/4;
-    display: flex;
-    justify-content: start;
-    align-items: end;
-    flex-direction: column;
-  }
-  .pagina4 .bienvenida4 div h1 {
-    width: 50%;
-    font-size: 22px;
-    padding: 0;
-    text-align: center;
-  }
-  .pagina4 .introduccion {
-    display: grid !important;
-    grid-template-columns: auto auto auto;
-  }
-  .pagina4 .introduccion div {
-    grid-column: 1/4;
-  }
-  .pagina4 .primerarticulo4 {
-    display: grid !important;
-    grid-template-columns: auto auto auto;
-    padding-bottom: 5%;
-  }
-  .pagina4 .primerarticulo4 .titulo1 {
-    grid-column: 1/4;
-    width: 100%;
-  }
-  .pagina4 .primerarticulo4 .inspeccion {
-    grid-column: 1/4;
-    width: 80%;
-  }
-  .pagina4 .primerarticulo4 .limpieza {
-    grid-column: 1/4;
-    width: 80%;
-  }
-  .pagina4 .primerarticulo4 .proteccion {
-    grid-column: 1/4;
-    width: 80%;
-  }
-  .pagina4 .segundoarticulo4 {
-    display: grid !important;
-    grid-template-columns: auto auto auto;
-  }
-  .pagina4 .segundoarticulo4 h1 {
-    color: white;
-  }
-  .pagina4 .segundoarticulo4 .titulo2 {
-    grid-column: 1/4;
-    width: 100%;
-  }
-  .pagina4 .segundoarticulo4 .seleccion {
-    grid-column: 1/4;
-    width: 80%;
-  }
-  .pagina4 .segundoarticulo4 .humedad {
-    grid-column: 1/4;
-    width: 80%;
-  }
-  .pagina4 .segundoarticulo4 .mantenimiento {
-    grid-column: 1/4;
-    width: 80%;
-  }
-  .pagina4 .segundoarticulo4 .conclusion4 {
-    grid-column: 1/4;
-    width: 90%;
-    color: white;
-  }
-  .pagina5 .bienvenida5 {
-    display: grid !important;
-    grid-template-columns: auto auto auto auto;
-    height: 95vh;
-  }
-  .pagina5 .bienvenida5 .containerimg {
-    grid-column: 1/6;
-    width: 100%;
-  }
-  .pagina5 .bienvenida5 .containertitulo {
-    grid-column: 1/6;
-    width: 100%;
-    padding: 4%;
-    margin: 0;
-  }
-  .pagina5 .bienvenida5 .containertitulo h1 {
-    font-size: 28px;
-  }
-  .pagina5 .bienvenida5 .containertitulo h5 {
-    font-size: 20px;
-    padding: 3%;
-  }
-  .pagina5 .bienvenida5 .containertitulo p {
-    font-size: 14px;
-  }
-  .pagina5 .mascontenido {
-    display: grid !important;
-    grid-template-columns: auto auto auto;
-  }
-  .pagina5 .mascontenido .mision {
-    grid-column: 1/3;
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    height: auto;
-  }
-  .pagina5 .mascontenido .mision h3 {
-    font-size: 23px;
-    margin: 0;
-  }
-  .pagina5 .mascontenido .mision p {
-    font-size: 16px;
-    padding: 3%;
-    margin: 0;
-  }
-  .pagina5 .mascontenido .equipo {
-    grid-column: 1/3;
-    width: 100%;
-    padding-top: 5%;
-  }
-  .pagina5 .mascontenido .equipo h3 {
-    font-size: 20px;
-  }
-  .pagina5 .mascontenido .equipo p {
-    font-size: 16px;
-    padding: 3%;
-  }
-  .pagina5 .mascontenido .imgequipo {
-    grid-column: 1/3;
-    width: 100%;
-  }
-  .pagina5 .mascontenido .filosofia {
-    grid-column: 1/3;
-    width: 100%;
-    padding-top: 5%;
-  }
-  .pagina5 .mascontenido .filosofia h3 {
-    font-size: 20px;
-  }
-  .pagina5 .mascontenido .filosofia p {
-    font-size: 16px;
-    padding: 3%;
-  }
-  .pagina5 .mascontenido .filosofia img {
-    width: 100%;
-  }
-  .pagina5 .mascontenido .conclusion5 {
-    grid-column: 1/3;
-    width: 100%;
-  }
-  .pagina5 .mascontenido .conclusion5 h5 {
-    font-size: 18px;
-  }
-}
 @media (min-width: 500px) and (max-width: 800px) {
   .bienvenida4 {
     display: grid !important;
@@ -2062,6 +1666,661 @@ main .art1 .div3 a {
   .filosofia img {
     width: 90%;
     height: 90%;
+  }
+  .containertitulo h1 {
+    font-size: 28px !important;
+  }
+  .containertitulo h5 {
+    font-size: 22px !important;
+    margin: 3%;
+  }
+  .containertitulo p {
+    font-size: 16px !important;
+  }
+  article .mision h3 {
+    font-size: 35px !important;
+  }
+  article .mision p {
+    font-size: 18px;
+    text-align: center;
+  }
+  article .equipo h3 {
+    font-size: 28px !important;
+    padding: 3%;
+  }
+  article .equipo p {
+    font-size: 18px;
+  }
+  .primerarticulo4 {
+    width: 80% !important;
+    height: 50%;
+  }
+  .segundoarticulo4 {
+    width: 80% !important;
+    height: 50%;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    background-color: white;
+    width: 100%;
+  }
+  header .contenedorheader {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+  }
+  header .contenedorheader .divcenter {
+    width: 100%;
+    grid-column: 1/4;
+    padding: 4%;
+    margin: 0;
+    border-bottom: 2px solid gray;
+  }
+  header .contenedorheader .divcenter h1 {
+    color: black;
+    font-size: 30px;
+    font-family: "Cinzel", serif;
+    font-family: "Montserrat", sans-serif;
+    margin: 4%;
+  }
+  header .contenedorheader .navcenter {
+    width: 100%;
+    grid-column: 1/4;
+    margin: 0;
+  }
+  header .contenedorheader .navcenter ul {
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .contenedorheader .navcenter ul li {
+    margin: 3%;
+  }
+  header .contenedorheader .navcenter ul a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s linear;
+    object-fit: cover;
+    font-size: 16px;
+  }
+  main .layoutmain {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+  }
+  main .layoutmain .section {
+    background: rgb(255, 255, 255) !important;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgb(255, 69, 12) 50%, rgb(216, 216, 217) 100%) !important;
+    background-image: none;
+    grid-column: 1/4;
+    height: 50vh;
+  }
+  main .layoutmain .section div {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  main .layoutmain .section div h1 {
+    color: black;
+    font-size: 29px;
+    color: #04355c;
+    font-stretch: narrower;
+  }
+  main .layoutmain .section div p {
+    color: black;
+    font-size: 14px;
+    color: #043359;
+  }
+  main .layoutmain .art1 {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 5%;
+    margin-top: 0%;
+  }
+  main .layoutmain .art1 .div1 {
+    width: 100%;
+    grid-column: 1/4;
+  }
+  main .layoutmain .art1 .div1 h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main .layoutmain .art1 .div2 {
+    width: 100%;
+    grid-column: 1/4;
+  }
+  main .layoutmain .art1 .div2 h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main .layoutmain .art1 .div3 {
+    width: 100%;
+    grid-column: 1/4;
+  }
+  main .layoutmain .art1 .div3 h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  footer .layoutfooter {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+  footer .layoutfooter .containerlogo {
+    grid-row: 2;
+    width: 100%;
+  }
+  footer .layoutfooter .containerlogo .sublogo h1 {
+    font-size: 30px;
+  }
+  footer .layoutfooter .containerlogo .sublogo img {
+    width: 30px;
+    height: 30px;
+  }
+  footer .layoutfooter .containerlogo .containerul {
+    width: 100%;
+  }
+  footer .layoutfooter .containerlogo .containerul ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+  }
+  footer .layoutfooter .containerlogo .containerul ul img {
+    width: 25px;
+    height: 25px;
+  }
+  footer .layoutfooter .containerlogo .containernum {
+    width: 100%;
+  }
+  footer .layoutfooter .containerlogo .containernum h5 {
+    text-align: center;
+    font-size: 15px;
+  }
+  footer .layoutfooter .containerform {
+    background: rgb(2, 66, 120);
+    background: linear-gradient(90deg, rgb(2, 66, 120) 0%, rgb(255, 69, 12) 100%);
+    grid-row: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  footer .layoutfooter .containerform .tituloform {
+    text-align: center;
+    height: auto;
+  }
+  footer .layoutfooter .containerform .tituloform h3 {
+    width: 100%;
+    margin: 3%;
+  }
+  footer .layoutfooter .containerform .tituloform .form {
+    font-size: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  footer .layoutfooter .containerform .tituloform .form input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  footer .layoutfooter .containerform .tituloform button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 3px 60px;
+    margin: 4%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  footer .layoutfooter .containerform .tituloform button:hover {
+    background-color: #45a049;
+  }
+  .layoutpinturas {
+    background-color: #FF450C;
+  }
+  .layoutpinturas .layoutcarousel {
+    background-color: #FF450C;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .layoutpinturas .layoutcarousel .carouselpadre {
+    background-color: #FF450C;
+    width: 100%;
+    margin: 0 !important;
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+  }
+  .layoutpinturas .layoutcarousel .carouselpadre .carousel {
+    height: 50vh !important;
+    width: 100%;
+    padding: 0;
+    grid-column: 1/4;
+  }
+  .layoutpinturas .layoutcarousel .carouselpadre .carousel .carouselhijo {
+    background-color: red;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
+  }
+  .layoutbox .pag2art1 {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+    margin: 0;
+  }
+  .layoutbox .pag2art1 .bienvenida {
+    padding-top: 3%;
+  }
+  .layoutbox .pag2art1 .bienvenida h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .layoutbox .pag2art1 .bienvenida p {
+    font-size: 16px;
+  }
+  .layoutbox .selecpintura {
+    display: grid !important;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  .layoutbox .selecpintura .titulo {
+    grid-column: 1/3;
+  }
+  .layoutbox .selecpintura .titulo h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .layoutbox .selecpintura .titulo p {
+    font-size: 16px;
+  }
+  .layoutbox .selecpintura .one {
+    grid-column: 1/3;
+    width: 80%;
+  }
+  .layoutbox .selecpintura .two {
+    grid-column: 1/3;
+    width: 80%;
+  }
+  .layoutbox .selecpintura .three {
+    grid-column: 1/3;
+    width: 80%;
+  }
+  .layoutbox .selecpintura .four {
+    grid-column: 1/3;
+    width: 80%;
+  }
+  .layoutbox .selecpintura .five {
+    grid-column: 1/3;
+    width: 80%;
+  }
+  .layoutbox .selecpintura .six {
+    grid-column: 1/3;
+    width: 80%;
+  }
+  .layoutbox .selecpintura .piedeart1 {
+    grid-column: 1/3;
+    width: 100%;
+  }
+  .layoutbox .selecpintura .piedeart1 h5 {
+    font-size: 18px;
+  }
+  .layoutbox .tiposdepintura {
+    display: grid !important;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  .layoutbox .tiposdepintura .titulo2 {
+    grid-column: 1/3;
+  }
+  .layoutbox .tiposdepintura .titulo2 h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .layoutbox .tiposdepintura .titulo2 p {
+    font-size: 16px;
+    text-align: start;
+  }
+  .layoutbox .tiposdepintura .one2 {
+    grid-column: 1/3;
+    width: 80%;
+  }
+  .layoutbox .tiposdepintura .two2 {
+    grid-column: 1/3;
+    width: 80%;
+  }
+  .layoutbox .tiposdepintura .three2 {
+    grid-column: 1/3;
+    width: 80%;
+  }
+  .layoutbox .tiposdepintura .piedeart2 {
+    grid-column: 1/3;
+    width: 100%;
+  }
+  .layoutbox .tiposdepintura .piedeart2 h5 {
+    font-size: 18px;
+  }
+  .layoutbox .evaluacionsup {
+    display: grid !important;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  .layoutbox .evaluacionsup .titulo3 {
+    grid-column: 1/3;
+  }
+  .layoutbox .evaluacionsup .titulo3 h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .layoutbox .evaluacionsup .titulo3 p {
+    font-size: 16px;
+    text-align: start;
+  }
+  .layoutbox .evaluacionsup .one3 {
+    grid-column: 1/3;
+    width: 80%;
+  }
+  .layoutbox .evaluacionsup .two3 {
+    grid-column: 1/3;
+    width: 80%;
+  }
+  .layoutbox .evaluacionsup .three3 {
+    grid-column: 1/3;
+    width: 80%;
+  }
+  .layoutbox .evaluacionsup .piedeart3 {
+    grid-column: 1/3;
+    width: 100%;
+  }
+  .layoutbox .evaluacionsup .piedeart3 h5 {
+    font-size: 18px;
+  }
+  .pag3sect .bienvenida2 {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+    background-image: cover;
+    width: 100%;
+    height: 50vh !important;
+  }
+  .pag3sect .bienvenida2 div h1 {
+    font-size: 30px;
+    padding-bottom: 10%;
+    color: white;
+  }
+  .pag3sect .introduccion {
+    width: 100%;
+  }
+  .pag3sect .primerarticulo {
+    display: grid !important;
+    grid-template-rows: auto auto auto auto;
+  }
+  .pag3sect .primerarticulo .interiores {
+    grid-row: 1;
+    width: 100%;
+  }
+  .pag3sect .primerarticulo .neutros {
+    grid-row: 2;
+    width: 80%;
+  }
+  .pag3sect .primerarticulo .naturales {
+    grid-row: 3;
+    width: 80%;
+  }
+  .pag3sect .primerarticulo .audaces {
+    grid-row: 4;
+    width: 80%;
+  }
+  .pag3sect .segundoarticulo {
+    display: grid !important;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  .pag3sect .segundoarticulo .exteriores {
+    grid-row: 1;
+    width: 100%;
+  }
+  .pag3sect .segundoarticulo .frescos {
+    grid-row: 2;
+    width: 80%;
+  }
+  .pag3sect .segundoarticulo .organicos {
+    grid-row: 3;
+    width: 80%;
+  }
+  .pag3sect .segundoarticulo .detalles {
+    grid-row: 4;
+    width: 80%;
+  }
+  .pag3sect .segundoarticulo .conclusion3 {
+    grid-row: 5;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .pagina4 .bienvenida4 {
+    display: grid !important;
+    grid-template-rows: auto;
+    background-image: cover;
+    width: 100%;
+    height: 50vh;
+  }
+  .pagina4 .bienvenida4 div {
+    grid-row: 1;
+    margin: 0;
+    padding-top: 5%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+  }
+  .pagina4 .bienvenida4 div h1 {
+    width: 50%;
+    font-size: 22px !important;
+    padding: 0;
+    text-align: center;
+  }
+  .pagina4 .introduccion {
+    display: grid !important;
+    grid-template-rows: 1fr;
+  }
+  .pagina4 .introduccion div {
+    grid-column: 1;
+  }
+  .pagina4 .introduccion div h5 {
+    font-size: 20px;
+  }
+  .pagina4 .primerarticulo4 {
+    height: 50%;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+  .pagina4 .primerarticulo4 .titulo1 {
+    grid-row: 1;
+    width: 100%;
+    padding: 2%;
+  }
+  .pagina4 .primerarticulo4 .titulo1 h1 {
+    font-size: 20px;
+  }
+  .pagina4 .primerarticulo4 .inspeccion {
+    grid-row: 2;
+    width: 90%;
+  }
+  .pagina4 .primerarticulo4 .inspeccion h3 {
+    font-size: 18px;
+  }
+  .pagina4 .primerarticulo4 .inspeccion p {
+    font-size: 16px;
+  }
+  .pagina4 .primerarticulo4 .limpieza {
+    grid-row: 3;
+    width: 90%;
+  }
+  .pagina4 .primerarticulo4 .limpieza h3 {
+    font-size: 18px;
+  }
+  .pagina4 .primerarticulo4 .limpieza p {
+    font-size: 16px;
+  }
+  .pagina4 .primerarticulo4 .proteccion {
+    grid-row: 4;
+    width: 90%;
+  }
+  .pagina4 .primerarticulo4 .proteccion h3 {
+    font-size: 18px;
+  }
+  .pagina4 .primerarticulo4 .proteccion p {
+    font-size: 16px;
+  }
+  .pagina4 .segundoarticulo4 {
+    height: 50%;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .pagina4 .segundoarticulo4 .titulo2 {
+    grid-row: 1;
+    width: 100%;
+    padding: 2%;
+  }
+  .pagina4 .segundoarticulo4 .titulo2 h1 {
+    font-size: 20px;
+  }
+  .pagina4 .segundoarticulo4 .seleccion {
+    grid-row: 2;
+    width: 90%;
+  }
+  .pagina4 .segundoarticulo4 .seleccion h3 {
+    font-size: 18px;
+  }
+  .pagina4 .segundoarticulo4 .seleccion p {
+    font-size: 16px;
+  }
+  .pagina4 .segundoarticulo4 .humedad {
+    grid-row: 3;
+    width: 90%;
+  }
+  .pagina4 .segundoarticulo4 .humedad h3 {
+    font-size: 18px;
+  }
+  .pagina4 .segundoarticulo4 .humedad p {
+    font-size: 16px;
+  }
+  .pagina4 .segundoarticulo4 .mantenimiento {
+    grid-row: 4;
+    width: 90%;
+  }
+  .pagina4 .segundoarticulo4 .mantenimiento h3 {
+    font-size: 18px;
+  }
+  .pagina4 .segundoarticulo4 .mantenimiento p {
+    font-size: 16px;
+  }
+  .pagina4 .video {
+    grid-template-rows: auto;
+  }
+  .pagina4 .video div {
+    grid-row: 1;
+  }
+  .pagina4 .video div h5 {
+    font-size: 22px;
+  }
+  .pagina4 .video .contenedorvideo {
+    margin: 0;
+    padding: 0;
+  }
+  .pagina4 .video .contenedorvideo iframe {
+    height: 350px;
+    width: 100%;
+    margin: 4%;
+  }
+  .pagina5 .bienvenida5 {
+    display: grid !important;
+    grid-template-columns: auto auto auto auto;
+    height: 100vh !important;
+  }
+  .pagina5 .bienvenida5 .containerimg {
+    grid-column: 1/6;
+    width: 100%;
+  }
+  .pagina5 .bienvenida5 .containertitulo {
+    grid-column: 1/6;
+    width: 100%;
+    padding: 4%;
+    margin: 0;
+  }
+  .pagina5 .bienvenida5 .containertitulo h1 {
+    font-size: 25px !important;
+  }
+  .pagina5 .bienvenida5 .containertitulo h5 {
+    font-size: 18px !important;
+    padding: 3%;
+  }
+  .pagina5 .bienvenida5 .containertitulo p {
+    font-size: 16px !important;
+  }
+  .pagina5 .mascontenido {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+  }
+  .pagina5 .mascontenido .mision {
+    grid-column: 1/3;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: auto;
+  }
+  .pagina5 .mascontenido .mision h3 {
+    font-size: 23px;
+    margin: 0;
+  }
+  .pagina5 .mascontenido .mision p {
+    font-size: 16px;
+    padding: 3%;
+    margin: 0;
+  }
+  .pagina5 .mascontenido .equipo {
+    grid-column: 1/3;
+    width: 100%;
+    padding-top: 5%;
+  }
+  .pagina5 .mascontenido .equipo h3 {
+    font-size: 20px;
+  }
+  .pagina5 .mascontenido .equipo p {
+    font-size: 16px;
+    padding: 3%;
+  }
+  .pagina5 .mascontenido .imgequipo {
+    grid-column: 1/3;
+    width: 100%;
+  }
+  .pagina5 .mascontenido .filosofia {
+    grid-column: 1/3;
+    width: 100%;
+    padding-top: 5%;
+  }
+  .pagina5 .mascontenido .filosofia h3 {
+    font-size: 20px;
+  }
+  .pagina5 .mascontenido .filosofia p {
+    font-size: 16px;
+    padding: 3%;
+  }
+  .pagina5 .mascontenido .filosofia img {
+    width: 100%;
+  }
+  .pagina5 .mascontenido .conclusion5 {
+    grid-column: 1/3;
+    width: 100%;
+  }
+  .pagina5 .mascontenido .conclusion5 h5 {
+    font-size: 18px;
   }
 }
 

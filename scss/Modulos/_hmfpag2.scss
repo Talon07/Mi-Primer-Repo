@@ -4,17 +4,14 @@
     background-color: #D8D8D9;
     width: 100%;
 
-
     .carouselpadre {
         margin: 0px 120px 10px 120px;
         padding: 0;
-
 
         .carousel {
             height: 80vh;
             width: 100%;
             padding: 0;
-
 
             .carouselhijo {
                 background-color: red;
@@ -37,8 +34,6 @@
     .pag2art1 {
         background-color:#D8D8D9;
         width: 100%;
-
-
 
         .bienvenida {
             display: flex;
@@ -73,18 +68,16 @@
 
         .titulo {
 
+            h1 {
+                @include titulos_art($color-titulosart:white);
 
-        h1 {
-            @include titulos_art($color-titulosart:white);
-
-        }
-        p {
-            text-align: start;
-            margin-left: 15px;
-            font-size: 17px;
-            color: white;
-
-        }
+            }
+            p {
+                text-align: start;
+                margin-left: 15px;
+                font-size: 17px;
+                color: white;
+            }
         }
 
         // AQUI LAS 6 CAJAS
@@ -98,7 +91,6 @@
             }
             p {
                 text-align: start;
-
             }
         }
         .two {
@@ -110,7 +102,6 @@
             }
             p {
                 text-align: start;
-
             }
         }
         .three {
@@ -158,9 +149,6 @@
             }
             p {
                 text-align: start;
-
-
-
             }
         }
         .piedeart1 {
@@ -187,37 +175,29 @@
             margin-top: 10px;
             padding: 30px;
 
-
             h1 {
                 font-size: 30px;
                 padding: 10px;
                 font-family: 'Montserrat', sans-serif;
                 color: white;
                 text-align: end;
-
-
             }
             p {
                 text-align: end;
                 margin-right: 15px;
                 font-size: 17px;
                 color: white;
-
             }
         }
         .one2 {
             @include box_tiposdepintura($color-fondobox:white);
 
-
             h3 {
                 font-size: 18px;
                 text-align: center;
-
             }
             p {
                 text-align: center;
-
-
             }
         }
         .two2 {
@@ -226,12 +206,9 @@
             h3 {
                 font-size: 18px;
                 text-align: center;
-
             }
             p {
                 text-align: center;
-
-
             }
         }
         .three2 {
@@ -240,7 +217,6 @@
             h3 {
                 font-size: 18px;
                 text-align: center;
-
             }
             p {
                 text-align: center;
@@ -254,7 +230,6 @@
                 color: white;
             }
         }
-
     }
 
     // Aqui comienza el articulo 3 "Evaluacion de superficie"
@@ -267,11 +242,9 @@
         align-items: center;
         flex-direction: column;
 
-
         .titulo3 {
             margin-top: 10px;
             padding: 30px;
-
 
             h1 {
             @include titulos_art($color-titulosart:white);
@@ -296,6 +269,10 @@
                 text-align: start;
 
             }
+            img {
+                height:30px;
+                width: 30px;
+            }
         }
         .two3 {
             @include box_all($color-fondobox:white);
@@ -306,7 +283,10 @@
             }
             p {
                 text-align: start;
-
+            }
+            img {
+                height:30px;
+                width: 30px;
             }
         }
         .three3 {
@@ -318,12 +298,14 @@
             }
             p {
                 text-align: start;
-
+            }
+            img {
+                height:30px;
+                width: 30px;
             }
         }
         .piedeart3 {
             @include pie_depagina($color-titulosart:white);
-
 
             h5 {
                 font-size: 20px;

@@ -9,7 +9,7 @@
     .bienvenida2 {
         background-image: url(../images/tendencias.webp);
         background-size: 100% 100%;
-        width: 70%;
+        width: 75%;
         height: 80vh;
 
         div {
@@ -26,6 +26,7 @@
                 font-size: 40px;
                 font-family: 'Cinzel', serif;
                 letter-spacing: 2px;
+                color: white;
             }
         }
     }
@@ -33,15 +34,16 @@
     .introduccion {
         text-align: center;
         padding: 40px;
+        width: 70%;
 
         h5 {
             font-family:'Times New Roman', Times, serif;
-            font-size: 22px;
+            font-size: 20px;
         }
     }
 
     .primerarticulo {
-        background-image: url(../images/interiores.jpg);
+        background-image: url(../images/interiores.webp);
         background-size: 100% 100%;
         display: flex;
         justify-content: center;
@@ -52,11 +54,10 @@
             padding-top: 30px;
             text-align: center;
             color: white;
-
             width: 100%;
 
             h1 {
-                font-size: 30px;
+                font-size: 28px;
                 padding: 10px;
                 font-family: 'Montserrat', sans-serif;
             }
@@ -67,10 +68,14 @@
 
 
             h3 {
-                font-size: 25px;
+                font-size: 24px;
             }
             p {
                 font-size: 18px;
+            }
+            img {
+                height: 30px;
+                width: 30px;
             }
         }
 
@@ -78,25 +83,33 @@
             @include box_all($color-fondobox:white);
 
             h3 {
-                font-size: 25px;
+                font-size: 24px;
             }
             p {
                 font-size: 18px;
+            }
+            img {
+                height: 30px;
+                width: 30px;
             }
         }
         .audaces {
             @include box_all($color-fondobox:white);
 
             h3 {
-                font-size: 25px;
+                font-size: 24px;
             }
             p {
                 font-size: 18px;
             }
+            img {
+                height: 30px;
+                width: 30px;
+            }
         }
     }
     .segundoarticulo {
-        background-image: url(../images/exteriores.jpg);
+        background-image: url(../images/exteriores.webp);
         background-size: 100% 100%;
         display: flex;
         justify-content: center;
@@ -113,7 +126,7 @@
 
 
             h1 {
-                font-size: 30px;
+                font-size: 28px;
                 padding: 10px;
                 font-family: 'Montserrat', sans-serif;
             }
@@ -122,10 +135,14 @@
             @include box_all($color-fondobox:white);
 
             h3 {
-                font-size: 25px;
+                font-size: 24px;
             }
             p {
                 font-size: 18px;
+            }
+            img {
+                height: 30px;
+                width: 30px;
             }
         }
 
@@ -133,20 +150,28 @@
             @include box_all($color-fondobox:white);
 
             h3 {
-                font-size: 25px;
+                font-size: 24px;
             }
             p {
                 font-size: 18px;
+            }
+            img {
+                height: 30px;
+                width: 30px;
             }
         }
         .detalles {
             @include box_all($color-fondobox:white);
 
             h3 {
-                font-size: 25px;
+                font-size: 24px;
             }
             p {
                 font-size: 18px;
+            }
+            img {
+                height: 30px;
+                width: 30px;
             }
         }
 
