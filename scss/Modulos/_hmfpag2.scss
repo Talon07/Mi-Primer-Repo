@@ -1,7 +1,9 @@
             //  MAIN PAGINA 2 "PINTURAS"
 
+@import './maps';
+
 .pg2main {
-    background-color: #D8D8D9;
+    background-color: map-get($pallet, gris);
     width: 100%;
 
     .carouselpadre {
@@ -31,7 +33,7 @@
                     // Aqui comienza la "Bienvenida"
 
     .pag2art1 {
-        background-color:#D8D8D9;
+        background-color:map-get($pallet, gris);
         width: 100%;
 
         .bienvenida {
@@ -59,7 +61,7 @@
 
 
     .selecpintura {
-        background-color:#00447D;
+        background-color:map-get($pallet, azuloscuro);
         width: 100%;
         text-align: start;
         padding: 30px 0px 30px 0px;
@@ -75,7 +77,7 @@
                 text-align: start;
                 margin-left: 15px;
                 font-size: 17px;
-                color: white;
+                color:map-get($pallet, parrafos);
             }
         }
 
@@ -163,7 +165,7 @@
     // Aqui comienza el segundo articulo "Tipos de pintura" de la pagina 2
 
     .tiposdepintura {
-        background-color:#FF450C;
+        background-color:map-get($pallet, naranjaf);
         width: 100%;
         text-align: end;
         padding: 30px 0px 30px 0px;
@@ -234,7 +236,7 @@
     // Aqui comienza el articulo 3 "Evaluacion de superficie"
 
     .evaluacionsup {
-        background-color:#FF764C;
+        background-color:map-get($pallet, naranja);
         width: 100%;
         display: flex;
         justify-content: center;
@@ -252,7 +254,7 @@
             p {
                 text-align: center;
                 font-size: 17px;
-                color: white;
+                color: map-get($pallet, parrafos);
                 padding-top: 10px;
 
             }
@@ -308,7 +310,7 @@
 
             h5 {
                 font-size: 20px;
-                color: white;
+                color:map-get($pallet, subtitulos);
             }
         }
     }

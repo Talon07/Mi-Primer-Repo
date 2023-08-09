@@ -1,7 +1,9 @@
         // MAIN PAGINA 3 "TENDENCIAS"
+        
+ @import './maps';
 
 .pag3sect {
-    background-color:white;
+    background-color:map-get($pallet, fondohyf);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +28,7 @@
                 font-size: 40px;
                 font-family: 'Cinzel', serif;
                 letter-spacing: 2px;
-                color: white;
+                color: map-get($pallet, titulosP);
             }
         }
     }
@@ -53,7 +55,7 @@
         .interiores {
             padding-top: 30px;
             text-align: center;
-            color: white;
+            color:map-get($pallet, titulosP);
             width: 100%;
 
             h1 {
@@ -120,7 +122,7 @@
         .exteriores {
             padding-top: 30px;
             text-align: center;
-            color: black;
+            color: map-get($pallet, titulosP2);
             width: 100%;
 
 

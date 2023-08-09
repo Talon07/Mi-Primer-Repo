@@ -1,17 +1,19 @@
             // HEADER Y FOOTER DE TODAS LAS PAGINAS
 
+@import './maps';
+
 header {
 
     .contenedorheader {
 
 
         .divcenter {
-            background-color:white;
+            background-color:map-get($pallet, fondohyf);
             display: flex;
             justify-content: center;
             align-items: center;
             a {
-                color: black;
+                color: map-get($pallet, titulosP2);
                 text-decoration: none;
             }
             h1 {
@@ -28,8 +30,7 @@ header {
         }
 
         .navcenter {
-            background-color:white;
-
+            background-color:map-get($pallet, fondohyf);
 
             ul {
 
@@ -43,7 +44,7 @@ header {
 
                 a{
                     text-decoration: none;
-                    color: black;
+                    color: map-get($pallet, titulosP2);
                     object-fit: cover;
                     font-size: 18px;
                     &:hover {
@@ -128,7 +129,7 @@ footer {
             .tituloform {
                 text-align: center;
                 height: auto;
-                color: white;
+                color:map-get($pallet, titulosP);
                 
                 
                 h3 {

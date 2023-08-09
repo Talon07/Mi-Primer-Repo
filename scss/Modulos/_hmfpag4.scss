@@ -1,8 +1,8 @@
             // MAIN PAGINA 4 "CONSEJOS"
+            
+@import './maps';
 
 .pagina4 {
-    // background: rgb(255,255,255);
-    // background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(191,191,191,1) 50%, rgba(255,118,76,1) 73%);
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,68,125,1) 50%, rgba(255,69,12,1) 73%);
     display: flex;
@@ -173,7 +173,7 @@
         }
     }
     .video {
-      background-color:#ff450c;
+      background-color:map-get($pallet, naranjaf);
         div {
             padding-top: 30px;
             h5 {

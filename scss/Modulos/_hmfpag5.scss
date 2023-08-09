@@ -1,4 +1,7 @@
                 // MAIN PAGINA 5 "MAS"
+
+@import './maps';
+
 .pagina5 {
     
     div {
@@ -43,13 +46,13 @@
     }
 
     article {
-        background-color:white;
+        background-color:map-get($pallet, fondohyf);
         margin:0;
         padding: 0;
 
             .mision {
                 @include main_pag5 ($color-fondobox);
-                background-color:#D8D8D9;
+                background-color:map-get($pallet, gris);
                 height: 50vh;
                 margin:50px 0px 50px 0px;
 
@@ -61,12 +64,12 @@
             }
             .equipo {
                 @include main_pag5 ($color-fondobox);
-                background-color: #00447D;
+                background-color: map-get($pallet, azuloscuro);
                 color: $color-section;
             }
             .imgequipo {
                 @include main_pag5 ($color-fondobox);
-                background-color:#00447D;
+                background-color:map-get($pallet, azuloscuro);
                 padding: 0;
 
                 img {
@@ -77,7 +80,7 @@
 
             .filosofia {
                 @include main_pag5 ($color-fondobox);
-                background-color:#FF450C;
+                background-color:map-get($pallet, naranjaf);
                 margin-top: 50px;
                 padding: 30px 0px 20px 0px;
                 h3 {
@@ -91,7 +94,7 @@
             }
             .conclusion5 {
                 text-align: center;
-                background-color:#FF450C;
+                background-color:map-get($pallet, naranjaf);
         
                 h5 {
                     padding: 20px 30px 20px 30px;
